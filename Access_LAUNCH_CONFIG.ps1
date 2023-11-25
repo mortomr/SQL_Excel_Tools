@@ -1,10 +1,8 @@
 
-# Modify this to take PDDR offline
-$fileName = "PDS.accde"
-# fileName = "PDS Offline.accde"
-$sourcePath = "\\jdc-fas3270-a1\Nuclear Project Delivery\Database\PEI Dashboard\$fileName"
+$fileName = "Template_Source_File.accde"
+$sourcePath = "\\jPathToSource\$fileName"
 $destinationPath = "C:\Temp"
-$logfile = Join-Path -Path $env:USERPROFILE -ChildPath "PDDR.log"
+$logfile = Join-Path -Path $env:USERPROFILE -ChildPath "NameofLogfile.log"
 
 # Function to log output to a file
 function Write-Log {
