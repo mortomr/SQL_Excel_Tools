@@ -1,4 +1,4 @@
-
+' =IF(J4<((H4-G4)/((H4-G4)+(I4-H4))),(G4+SQRT((J4*(H4-G4)*((H4-G4)+(I4-H4))))),(I4-SQRT((1-J4)*(I4-H4)*((H4-G4)+(I4-H4)))))
 Function Risk3Point(LOW As Double, MID As Double, HI As Double, PCT As Double) As Double
     Dim result As Double
     
