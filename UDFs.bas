@@ -1,3 +1,17 @@
+
+Function Risk3Point(LOW As Double, MID As Double, HI As Double, PCT As Double) As Double
+    Dim result As Double
+    
+    If PCT < ((MID - LOW) / ((MID - LOW) + (HI - MID))) Then
+        result = LOW + Sqr(PCT * (MID - LOW) * ((MID - LOW) + (HI - MID)))
+    Else
+        result = HI - Sqr((1 - PCT) * (HI - MID) * ((MID - LOW) + (HI - MID)))
+    End If
+    
+    Risk3Point = result
+End Function
+
+
 'simple vba UDFs for formatting [fields] or 'values' inside Excel for use in SQL
 
 Function SQLFields(ParamArray args() As Variant) As String
