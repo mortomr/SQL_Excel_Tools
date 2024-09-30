@@ -19,6 +19,7 @@ Function SQLFields(ParamArray args() As Variant) As String
     Dim cell As Range
     Dim result As String
     Dim rng As Range
+    Dim arg as Variant
     
     result = ""
     
@@ -48,6 +49,7 @@ Function SQLText(ParamArray args() As Variant) As String
     Dim cell As Range
     Dim result As String
     Dim rng As Range
+    Dim arg as Variant
     
     result = ""
     
